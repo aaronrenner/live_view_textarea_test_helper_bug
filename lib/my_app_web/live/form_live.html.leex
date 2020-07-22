@@ -1,0 +1,8 @@
+<%= f = form_for @changeset, "#", phx_change: "validate" %>
+  <%= label f, :name %>
+  <%= textarea f, :name %>
+
+  <%= submit "Submit" %>
+</form>
+
+<pre class="result"><%= @name %></pre>
